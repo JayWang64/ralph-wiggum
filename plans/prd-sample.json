@@ -1,0 +1,33 @@
+[
+  {
+    "category": "functional",
+    "description": "Preview Changelog action visible when multiple versions exist",
+    "steps": [
+      "Select a repo with multiple versions",
+      "Click the Actions dropdown",
+      "Verify 'Preview Changelog' action is visible in the Version section"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Preview Changelog action hidden when only one version exists",
+    "steps": [
+      "Select a repo with only one version",
+      "Click the Actions dropdown",
+      "Verify 'Preview Changelog' action is not visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Clicking Preview Changelog navigates to preview page",
+    "steps": [
+      "Select a repo with multiple versions",
+      "Click the Actions dropdown",
+      "Click 'Preview Changelog'",
+      "Verify URL changes to changelog preview page",
+      "Verify changelog content is displayed"
+    ]
+  }
+]
